@@ -1,2 +1,2 @@
 # Jeu Pierre-feuille-ciseaux
- Jeu du P-F-C avec localStorage
+ Jeu du Pierre-Feuille-Ciseau avec un enregistrement en local avec la fonction localStorage
