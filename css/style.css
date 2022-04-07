@@ -1,0 +1,32 @@
+html,body{
+    margin:0;
+    height:100%;
+}
+
+#sepa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+#main{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    height: inherit;
+}
+
+#anim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/span 3/1/span 1;
+    border: 1px solid black;
+    height: inherit;
+    font-size: 8vh;
+}
+
+#main>figure>img{
+width: 100%;
+}
+
