@@ -59,6 +59,12 @@ let loss = document.getElementById("def");
 let draw = document.getElementById("draw");
 let reset = document.getElementById("btn-reset");
 
+// Insertion de l'historique 
+
+let hist_win = document.getElementById("hist-vict");
+let hist_loss = document.getElementById("hist-def");
+let hist_draw = document.getElementById("hist-draw");
+
 //Je vais placer un (ecouteur) sur chaque elements ayant une class .imag
 
 // Declaration d'une variable
@@ -101,11 +107,16 @@ let vic = localStorage.getItem('victoire');
 let def = localStorage.getItem('defaite');
 let egal = localStorage.getItem('null');
 
+// Recuperation du localstorage pour l'historique
+hist_win.textContent = localStorage.getItem('victoire');
+hist_loss.textContent = localStorage.getItem('defaite');
+hist_draw.textContent = localStorage.getItem('null');
+
 /* clear storage */
 reset.addEventListener('click', () => {
-    win.textContent = localStorage.removeItem('victoire');
-    loss.textContent = localStorage.removeItem('defaite');
-    draw.textContent = localStorage.removeItem('null');
+    win.textContent = localStorage.clear('victoire');
+    loss.textContent = localStorage.clear('defaite');
+    draw.textContent = localStorage.clear('null');
 })
 
  
