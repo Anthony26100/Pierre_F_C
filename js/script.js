@@ -117,6 +117,7 @@ reset.addEventListener('click', () => {
     win.textContent = localStorage.clear('victoire');
     loss.textContent = localStorage.clear('defaite');
     draw.textContent = localStorage.clear('null');
+    location.reload();
 })
 
  
