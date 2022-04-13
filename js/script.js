@@ -59,7 +59,7 @@ let loss = document.getElementById("def");
 let draw = document.getElementById("draw");
 let reset = document.getElementById("btn-reset");
 
-// Insertion de l'historique 
+// Recuperation/Insertion des balises de l'historique
 
 let hist_win = document.getElementById("hist-vict");
 let hist_loss = document.getElementById("hist-def");
@@ -79,9 +79,6 @@ ls_img.forEach((element,keys) => {
 });
 
 //Creation d'une fonction de comptage
-
-
-
 function count(result){
 
     if(result ==='v'){
@@ -107,7 +104,7 @@ let vic = localStorage.getItem('victoire');
 let def = localStorage.getItem('defaite');
 let egal = localStorage.getItem('null');
 
-// Recuperation du localstorage pour l'historique
+// Recupere et vérifie si la clé existe du localstorage pour l'historique
 hist_win.textContent = localStorage.getItem('victoire');
 hist_loss.textContent = localStorage.getItem('defaite');
 hist_draw.textContent = localStorage.getItem('null');
