@@ -144,3 +144,12 @@ reset.addEventListener('click', () => {
 // img3.addEventListener('click', () => {
 //     console.log('img1');
 // });
+
+
+let img = document.querySelectorAll(".imag");   
+
+img.forEach((value,key) => {
+    value.addEventListener('click', () =>{
+        document.getElementById("test").textContent = value.children[0].alt;
+    })
+});
